@@ -38,7 +38,13 @@ do
         zip -r -o -q ${TARGET_DIR}/${PACKAGEFILE} eclipse || exit 1
     else
         PACKAGEFILE="${BASENAME}-${EXTENSION}.tar.gz"
-        tar zc --owner=100 --group=100 -f ${TARGET_DIR}/${PACKAGEFILE} eclipse || exit 1
+        CURRENTOS=`uname -s`
+		if [[ $CURRENTOS = "Darwin" ]]; then
+		        tar zc -f ${TARGET_DIR}/${PACKAGEFILE} eclipse || exit 1
+		else
+		        tar zc --owner=100 --group=100 -f ${TARGET_DIR}/${PACKAGEFILE} eclipse || exit 1
+		fi
+        
     fi
     echo "${PACKAGEFILE}"
 done
