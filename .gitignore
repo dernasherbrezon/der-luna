@@ -10,3 +10,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/archive/
+*~
+*.bak
+bin/
+bin/**
+/CVS/*
+*/CVS/*
+.cvsignore
+*/.cvsignore
+.DS_Store*
+ehthumbs.db
+Icon?
+*.swp
+Thumbs.db
+*.tmp
+target/
+/archive

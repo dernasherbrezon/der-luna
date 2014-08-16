@@ -42,7 +42,7 @@
       <import feature="org.eclipse.m2e.feature"/>
       <import feature="org.eclipse.m2e.logback.feature"/>
       <import feature="org.eclipse.recommenders.rcp.feature"/>
-      <!-- <import feature="org.dadacoalition.yedit"/> -->
+      <import feature="org.dadacoalition.yedit"/>
       <import feature="org.eclipse.emf.common"/>
       <import feature="org.eclipse.emf.ecore"/>
       <import feature="org.eclipse.wst.jsdt.feature"/>
@@ -50,6 +50,7 @@
       <import feature="org.eclipse.wst.xml_ui.feature"/>
       <import feature="edu.umd.cs.findbugs.plugin.eclipse"/>
       <import feature="com.yourkit.profiler"/>
+      <import feature="net.sourceforge.shelled"/>
    </requires>
 
    <plugin

@@ -69,6 +69,26 @@
       <url>http://download.eclipse.org/cbi/updates/license/</url>
       <layout>p2</layout>
     </repository>
+    <repository>
+      <id>yourkit-feature</id>
+      <url>file:///${basedir}/../org.eclipse.epp.package.java.thirdparty/target/yourkit-repository</url>
+      <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>findbugs-feature</id>
+      <url>file:///${basedir}/../org.eclipse.epp.package.java.thirdparty/target/findbugs-repository</url>
+      <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>yedit-feature</id>
+      <url>file:///${basedir}/../org.eclipse.epp.package.java.thirdparty/target/yedit-repository</url>
+      <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>shelled-feature</id>
+      <url>http://sourceforge.net/projects/shelled/files/shelled/update/</url>
+      <layout>p2</layout>
+    </repository>
   </repositories>
 
   <build>
